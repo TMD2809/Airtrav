@@ -1,0 +1,39 @@
+mixin tour-item(view, Price, title, amount, amountrv, duration, cost)
+                .top-tour
+                    .image-tour
+                        img.view(src= view, alt='Thailands Ayutthaya Temples')
+                        span.Price-tour From $#{Price}
+                    .content-tour
+                        div
+                            h3.title-tour= title
+                        .review-tour
+                            .rating-tour
+                                .star-tour
+                                    img(src='../Img/Shape.png', alt='star-tour')
+                                .review-amount-tour
+                                    span= amount 
+                                        |  (#{amountrv} reviews)
+                            span.duration-tour Duration: #{duration} hours
+                        .pricing-button-tour
+                                a.button(target='_blank', rel='noopener noreferrer', href='https://www.instagram.com/direct/t/340282366841710300949128221139589243545')
+                                    | Tours Price $#{cost}
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Airtrav
+        link(rel="icon" type="image/png" href="../Img/logo.png")
+        link(rel="stylesheet" href="./app.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto:wght@500&display=swap" rel="stylesheet")
+    body 
+        .container
+            .list-tour
+                +tour-item('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJlYWNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60','40','Thailands Ayutthaya Temples Cruise from Bangkok Thailands Ayutthaya Temples Cruise from Bangkok Thailands Ayutthaya Temples Cruise from Bangkok','5','200','4',"67")
+                
+                +tour-item('https://images.unsplash.com/photo-1455156218388-5e61b526818b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60','50', 'FLoating Markets Day Trip from Bangkok','4.8','567','6',"99")
+                +tour-item('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2FudG9yaW5pfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60','90','Bangkok Dinner Cruise on the Chao Phraya River','3','144','24',"90")
+                

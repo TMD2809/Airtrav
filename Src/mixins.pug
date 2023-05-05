@@ -1,0 +1,19 @@
+mixin tour-item(view, Price, title, amount, amountrv, duration, cost)
+                .top-tour
+                    .image-tour
+                        img.view(src= view, alt='Thailands Ayutthaya Temples')
+                        span.Price-tour From $#{Price}
+                    .content-tour
+                        div
+                            h3.title-tour= title
+                        .review-tour
+                            .rating-tour
+                                .star-tour
+                                    img(src='../Img/Shape.png', alt='star-tour')
+                                .review-amount-tour
+                                    span= amount 
+                                        |  (#{amountrv} reviews)
+                            span.duration-tour Duration: #{duration} hours
+                        .pricing-button-tour
+                                a.button(target='_blank', rel='noopener noreferrer', href='https://www.instagram.com/direct/t/340282366841710300949128221139589243545')
+                                    | Tours Price $#{cost}
