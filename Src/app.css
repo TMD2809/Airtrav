@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img {
+    display: block;
+}
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -107,6 +110,80 @@ body {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.21;
+}
+.container-popular {
+    width: 1170px;
+    height: 288px;
+    margin: 0 auto;
+}
+.list-popular {
+    display: flex;
+    margin-left: -30px;
+}
+.item-popular {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+.image-popular {
+    position: relative;
+}
+.activity_img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+}
+.button-popular {
+    position: absolute;
+    display: inline-block;
+    bottom: -12.5px;
+    right: 20px;
+    font-size: 12px;
+    line-height: 1.21;
+    color: #f4f5f6;
+    text-decoration: none;
+    padding: 5px 18px;
+    background-color: #3b71fe;
+    border-radius: 15px;
+}
+.content-popular {
+    padding: 14px 20px 11px 20px;
+}
+.time-popular {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.21;
+    color: #777e90;
+}
+.content-container {
+    display: inline-block;
+    font-weight: 500px;
+}
+.title-popular {
+    font-size: 18px;
+    line-height: 1.5555555556;
+    color: #353945;
+    margin: 8px 0 9px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.review-popular {
+    display: flex;
+    align-items: center;
+}
+.star-popular {
+    margin-right: 11px;
+}
+.amount-popular {
+    font-size: 12px;
+    line-height: 1.75;
+    color: #4f4f4f;
 }
 @media screen and (max-width: 390px) {
     .top-tour {
