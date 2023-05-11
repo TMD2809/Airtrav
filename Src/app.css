@@ -159,10 +159,10 @@ body {
     color: #777e90;
 }
 .content-container {
-    display: inline-block;
-    font-weight: 500px;
+    display: block;
 }
 .title-popular {
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.5555555556;
     color: #353945;
