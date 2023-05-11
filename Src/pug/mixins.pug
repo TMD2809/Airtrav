@@ -20,6 +20,7 @@ mixin tour-item(view, Price, title, amount, amountrv, duration, cost)
 mixin popular-item(view_popular, time_poppular, Activity_popular)
                 .item-popular
                     .image-popular
+                        .overlay-popular
                         img.activity_img(src=view_popular, alt="activity")
                         a.button-popular(target='_blank', rel='noopener noreferrer', href="https://www.instagram.com/_____0430_____/")= "Must See" 
                     .content-popular
