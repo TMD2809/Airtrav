@@ -153,8 +153,9 @@ body {
 .button-popular {
     position: absolute;
     display: inline-block;
-    bottom: -12px;
+    bottom: 0px;
     right: 20px;
+    transform: translateY(50%);
     font-size: 12px;
     line-height: 1.25;
     color: #f4f5f6;
