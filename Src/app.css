@@ -3,15 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-img {
-    display: block;
-    width: 100%;
+:root {
+    --primary-color: #3b71fe;
 }
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     background-color: #d3d3d3;
     padding: 40px 24px;
+}
+img {
+    display: block;
+    width: 100%;
 }
 .container {
     width: 100%;
@@ -102,7 +105,7 @@ body {
 .pricing-button-tour {
     padding: 8px 16px;
     display: inline-block;
-    background-color: #3b71fe;
+    background-color: var(--primary-color);
     border-radius: 8px;
     width: 138px;
 }
@@ -161,7 +164,7 @@ body {
     color: #f4f5f6;
     text-decoration: none;
     padding: 4px 18px 5px;
-    background-color: #3b71fe;
+    background-color: var(--primary-color);
     border-radius: 30px;
 }
 .content-popular {
