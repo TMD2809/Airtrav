@@ -3,15 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-img {
-    display: block;
-    width: 100%;
+:root {
+    --primary-color: #3b71fe;
 }
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     background-color: #d3d3d3;
     padding: 40px 24px;
+}
+img {
+    display: block;
+    width: 100%;
 }
 .container {
     width: 100%;
@@ -102,7 +105,7 @@ body {
 .pricing-button-tour {
     padding: 8px 16px;
     display: inline-block;
-    background-color: #3b71fe;
+    background-color: var(--primary-color);
     border-radius: 8px;
     width: 138px;
 }
@@ -113,7 +116,8 @@ body {
     line-height: 1.21;
 }
 .container-popular {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     height: 288px;
     margin: 0 auto;
 }
@@ -129,6 +133,19 @@ body {
 }
 .image-popular {
     position: relative;
+    height: 185px;
+}
+.overlay-popular {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        24.19deg,
+        rgba(4, 4, 4, 0.52) 0.23%,
+        rgba(4, 4, 4, 0) 55.52%
+    );
+    border-radius: 14px 14px 0 0;
+    position: absolute;
+    inset: 0;
 }
 .activity_img {
     width: 100%;
@@ -139,14 +156,15 @@ body {
 .button-popular {
     position: absolute;
     display: inline-block;
-    bottom: -12.5px;
+    bottom: 0px;
     right: 20px;
+    transform: translateY(50%);
     font-size: 12px;
-    line-height: 1.21;
+    line-height: 1.25;
     color: #f4f5f6;
     text-decoration: none;
-    padding: 5px 18px;
-    background-color: #3b71fe;
+    padding: 4px 18px 5px;
+    background-color: var(--primary-color);
     border-radius: 30px;
 }
 .content-popular {
