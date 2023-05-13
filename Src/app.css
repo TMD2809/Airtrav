@@ -5,6 +5,7 @@
 }
 :root {
     --primary-color: #3b71fe;
+    --primary-space_between: 30px;
 }
 body {
     font-family: 'Inter', sans-serif;
@@ -120,6 +121,7 @@ img {
     width: 100%;
     height: 288px;
     margin: 0 auto;
+    margin-bottom: 135px;
 }
 .list-popular {
     display: flex;
@@ -203,6 +205,92 @@ img {
     font-size: 12px;
     line-height: 1.75;
     color: #4f4f4f;
+}
+.container-hidden {
+    max-width: 998px;
+    width: 100%;
+    height: 470px;
+    margin: 0 auto;
+}
+.list-hidden {
+    margin-bottom: calc(135px - var(--primary-space_between));
+    /* align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+.item-hidden {
+    width: calc(50% - 30px);
+    padding: 12px;
+    background: rgb(253, 253, 253);
+    margin-left: 30px;
+    margin-bottom: var(--primary-space_between);
+    border-radius: 13px;
+    /* position: relative; */
+}
+.imgae-hidden {
+    position: relative;
+}
+.gadient-hidden {
+    background: linear-gradient(
+        3.19deg,
+        rgba(0, 0, 0, 0.6) 17.99%,
+        rgba(0, 0, 0, 0) 55.56%
+    );
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    border-radius: 13px;
+    position: absolute;
+}
+.view-hidden {
+    display: block;
+    width: 100%;
+    height: 196px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+.content-hidden {
+    position: absolute;
+    bottom: 12px;
+    left: 30px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.title-hidden {
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 0px;
+}
+.date-hidden {
+    /* display: inline-block; */
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 1.4285714286;
+    color: rgba(230, 232, 236, 1);
+}
+.link-hidden {
+    display: flex;
+    align-items: center;
+}
+.explore-hidden {
+    padding: 9px 40px;
+    background-color: var(--primary-color);
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.button-hidden {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
 }
 @media screen and (max-width: 390px) {
     .top-tour {
