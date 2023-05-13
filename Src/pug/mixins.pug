@@ -33,14 +33,14 @@ mixin popular-item(view_popular, time_poppular, Activity_popular)
                                 img.shape-popular(src="../Img/Shape.png", alt="")
                             .amount-popular
                                 span 4.8 (12 reviews)
-mixin item-hidden()
+mixin item-hidden(view_hidden)
                 .item-hidden 
                     .imgae-hidden 
                         .gadient-hidden
-                        img.view-hidden(src="../Img/blue-morning-natural-mountains-bamboo.png", alt="hidden gem")
+                        img.view-hidden(src= view_hidden, alt="hidden gem")
                         .content-hidden
-                            .title-hidden
-                                h3 Bangkok Trip
-                            .date-hidden
-                                span 27 Sep, 2023
+                            //- .title-hidden
+                            h3.title-hidden Bangkok Trip
+                            //- .date-hidden
+                            span.date-hidden 27 Sep, 2023
 
