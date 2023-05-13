@@ -259,7 +259,7 @@ img {
 }
 .title-hidden {
     font-style: normal;
-    font-weight: 500px;
+    font-weight: 600px;
     font-size: 24px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 1);
@@ -340,6 +340,13 @@ img {
         width: 100%;
         padding: 8px;
         margin-bottom: var(--primary-space_between);
+    }
+    .gadient-hidden {
+        background: linear-gradient(
+            8.83deg,
+            rgba(0, 0, 0, 0.56) 22.88%,
+            rgba(0, 0, 0, 0) 58.17%
+        );
     }
     .view-hidden {
         height: 133px;
