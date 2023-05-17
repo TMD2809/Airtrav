@@ -29,8 +29,7 @@ html(lang="en")
                 +popular-item("https://images.unsplash.com/photo-1597250861267-429663f244a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHJvY2slMjBjbGltYmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60","Jan 1 10:00 AM - 1:00 PM","Rock climbing")
                 +popular-item("https://images.unsplash.com/photo-1605540436563-5bca919ae766?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8ODl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60","Aug 23 10:00 AM - 1:00 PM","Skiing")
         .container-hidden
-            .heading-hidden 
-                h2.head-hidden Hidden gems in Bangkok
+            h2.head-hidden Hidden gems in Bangkok
             .list-hidden 
                 +item-hidden("https://images.unsplash.com/photo-1590829197118-b0609523669d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRlc3RpbmF0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60")
                 +item-hidden("https://plus.unsplash.com/premium_photo-1676190303542-0d3a16cf1667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRlc3RpbmF0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60")
@@ -39,5 +38,8 @@ html(lang="en")
             .link-hidden 
                 .explore-hidden 
                     a.button-hidden(target='_blank', rel='noopener noreferrer', href="https://www.instagram.com/floral.vintagee/") Explore All
-
-
+        .container-test 
+            .test-list 
+                each val in ["https://images.unsplash.com/photo-1587037307164-ab66fa72a903?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHNraWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", "https://images.unsplash.com/photo-1613338130141-d1696b8b9e50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fHNraWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", "https://images.unsplash.com/photo-1551524559-8af4e6624178?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2tpaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60", "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2tpaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60", "https://plus.unsplash.com/premium_photo-1669907525470-586042acc33c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2tpaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"]
+                    .test-item
+                        img.test-view(src= val , alt="")
