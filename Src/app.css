@@ -16,7 +16,7 @@ img {
     display: block;
     width: 100%;
 }
-.container {
+.container-tour {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -125,7 +125,7 @@ img {
     font-size: 14px;
     line-height: 1.21;
 }
-.container-popular {
+.container {
     max-width: 1170px;
     width: 100%;
     height: auto;
@@ -246,7 +246,8 @@ img {
     flex-wrap: wrap;
     margin-left: -30px; */
     display: grid;
-    /* grid-auto-flow: column; */
+    /* grid-auto-flow: column;
+    grid-auto-columns: 1fr; */
     grid-template-columns: repeat(2, 1fr);
     /* row-gap: 30px; */
     gap: 30px;
@@ -306,11 +307,8 @@ img {
     line-height: 1.4285714286;
     color: rgba(230, 232, 236, 1);
 }
-.link-hidden {
-}
+
 .button-hidden {
-    /* display: flex;
-    align-items: center; */
     padding: 9px 40px;
     background-color: var(--primary-color);
     border-radius: 30px;
@@ -353,6 +351,10 @@ img {
     grid-row: 3/4;
 }
 @media screen and (max-width: 390px) {
+    body {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     .top-tour {
         width: 100%;
         margin-bottom: 20px;
