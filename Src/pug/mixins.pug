@@ -15,7 +15,7 @@ mixin tour-item(view, Price, title, amount, amountrv, duration, cost)
                                         |  (#{amountrv} reviews)
                             span.duration-tour Duration: #{duration} hours
                         .pricing-button-tour
-                                a.button(target='_blank', rel='noopener noreferrer', href='https://www.instagram.com/direct/t/340282366841710300949128221139589243545')
+                                a.button-tour(target='_blank', rel='noopener noreferrer', href='https://www.instagram.com/direct/t/340282366841710300949128221139589243545')
                                     | Tours Price $#{cost}
 mixin popular-item(view_popular, time_poppular, Activity_popular)
                 .item-popular
@@ -43,3 +43,10 @@ mixin item-hidden(view_hidden)
                             h3.title-hidden Bangkok Trip
                             //- .date-hidden
                             span.date-hidden 27 Sep, 2023
+mixin item-footer()
+                        .item-footer
+                            h4.title-footer Services
+                            ul.link-footer 
+                                each name in ["Trip Planner","Tour Planning","Tour Guide" ,"Tour Package","Tour advice"]
+                                    li.link-items-footer
+                                        a.link-item-footer(href= "https://www.instagram.com/p/Cs0_OxLp9Jq/")= name 
