@@ -157,6 +157,7 @@ button {
 }
 .list-popular {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -30px;
 }
 .item-popular {
@@ -421,7 +422,7 @@ button {
     color: rgba(177, 181, 195, 1);
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(20px / 14px);
+    line-height: calc(20 / 14);
 }
 .sn-footer {
     display: flex;
@@ -455,6 +456,14 @@ button {
         padding-left: 24px;
         padding-right: 24px;
     }
+    .container-tour {
+        margin-bottom: 20px;
+    }
+    .head-tour {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5555555556;
+    }
     .top-tour {
         width: 100%;
         margin-bottom: 20px;
@@ -469,7 +478,7 @@ button {
         border-radius: 3.54px;
     }
     .content-tour {
-        padding: 18px 18px 9.31px;
+        padding: 18px 18px 9px;
     }
     .title-tour {
         margin-bottom: 9px;
@@ -493,14 +502,53 @@ button {
         font-size: 12px;
         line-height: 1.2083333333;
     }
+    .popular {
+        margin-bottom: 20px;
+        padding-bottom: 0px;
+    }
+    .container {
+        padding: 30px 0 30px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .heading-popular {
+        margin-bottom: 30px;
+    }
+    .head-popular {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .item-popular {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .overlay-popular {
+        background: linear-gradient(
+            24.19deg,
+            rgba(4, 4, 4, 0.52) 0.23%,
+            rgba(4, 4, 4, 0) 55.52%
+        );
+    }
+    .hidden {
+        margin-bottom: 30px;
+    }
+    .container-hidden {
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+    .head-hidden {
+        margin-bottom: 19px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(28 / 18);
+    }
     .list-hidden {
-        --primary-space_between: 16px;
-        margin-bottom: calc(135px - var(--primary-space_between));
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
     .item-hidden {
-        width: 100%;
+        /* width: 100%; */
         padding: 8px;
-        margin-bottom: var(--primary-space_between);
     }
     .gadient-hidden {
         background: linear-gradient(
@@ -508,6 +556,13 @@ button {
             rgba(0, 0, 0, 0.56) 22.88%,
             rgba(0, 0, 0, 0) 58.17%
         );
+        border-radius: 9px;
+    }
+    .activity_img {
+        width: 100%;
+        height: 185px;
+        object-fit: cover;
+        border-radius: 9px;
     }
     .view-hidden {
         height: 133px;
